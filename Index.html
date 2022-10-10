@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="./Script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+        <!-- header -->
+      <div class="row">
+        <div class="col-12 gy-1">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+      </div>
+      <!-- content -->
+      <div class="row gx-5">
+        <!-- side content -->
+        <div class="col-3 gy-3 text-lg-start">
+          <div class="p-2 border bg-primary row-2 rounded-top py-2 ps-3 text-white"> 
+                Side title
+          </div>
+          <div class="p-2 border bg-light row-2 text-break rounded-bottom py-2 ps-3" style="min-height:90%;"> 
+            Side content    
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="col-9 gy-3 text-lg-start">
+            <div class="p-2 border bg-primary row-2 rounded-top py-2 ps-3 text-white"> 
+                Main title
+        </div>
+        <div class="p-2 border bg-light row-2 text-break rounded-bottom py-2 ps-3"> 
+            <table class="table table-striped table-borderless ">
+                <thead class="bg-dark text-white ">
+                  <tr>
+                    <th scope="col" style="width:5%;">#</th>
+                    <th scope="col" style="width:12%;" >First name</th>
+                    <th scope="col" style="width:18%;">Last name</th>
+                    <th scope="col" style="width:35%;">Email</th>
+                    <th scope="col" style="width:30%;">Avatar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" id="odd-row">1</th>
+                    <td id="odd-fn">Default</td>
+                    <td id="odd-ln">Default</td>
+                    <td id="odd-email">Default</td>
+                    <td id="odd-img"><img src="https://lh3.googleusercontent.com/pw/AL9nZEUczMOrJ9S_jMlZ4mCNaHGnyCtv6We3MNBiV7UDP0do96VKrWvJuz465VploH9rvyrduOhsM_jbC9c-RZT6wbtbHlLzrRmqbW-jJEXn0l53bi9n6qmnrpC2dP7maltDspaI-sfValByVDXc7Nbp-iUw=s128-no?authuser=0" 
+                        class="img-thumbnail" alt="..."></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" id="even-row">2</th>
+                    <td id="even-fn">Default</td>
+                    <td id="even-ln">Default</td>
+                    <td id="even-email">Default</td>
+                    <td id="even-img"><img src="https://lh3.googleusercontent.com/pw/AL9nZEUczMOrJ9S_jMlZ4mCNaHGnyCtv6We3MNBiV7UDP0do96VKrWvJuz465VploH9rvyrduOhsM_jbC9c-RZT6wbtbHlLzrRmqbW-jJEXn0l53bi9n6qmnrpC2dP7maltDspaI-sfValByVDXc7Nbp-iUw=s128-no?authuser=0" 
+                        class="img-thumbnail" alt="..."></td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item pre-btn">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item page-btn active" id="btn1" data-select="selected"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item page-btn" id="btn2" data-select="none"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item page-btn" id="btn3" data-select="none"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item page-btn" id="btn4" data-select="none"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item page-btn" id="btn5" data-select="none"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item page-btn" id="btn6" data-select="none"><a class="page-link" href="#">6</a></li>
+                  <li class="page-item next-btn">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+      </div>
+      <!-- bottom -->
+      <div class="row ">
+        <div class="col-12 gy-3 text-start">
+            <div class="ps-2 py-2 border bg-light">bottom</div>
+      </div>
+    </div>
+  </body>
+</html>
